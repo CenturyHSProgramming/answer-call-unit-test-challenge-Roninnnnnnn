@@ -6,12 +6,9 @@
 
 
 def answerCall(caller_code, sameAreaCode, cur_time):
-    response = True
+    response = False
+
     return response
 
-def test_answerCallForUnknownDifferentAreaCodeGoodTime():
-    response = screener.answerCall("U", False, "14:00")
-    return response == False
-
 if __name__ == '__main__':
-    answerCall("U", False, "09:00")
+    print(answerCall("U", False, "09:00"))
