@@ -12,3 +12,4 @@ def answerCall(caller_code, sameAreaCode, cur_time):
 
 if __name__ == '__main__':
     print(answerCall("U", False, "09:00"))
+    print("How am I now?")
