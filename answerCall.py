@@ -7,7 +7,16 @@
 
 def answerCall(caller_code, sameAreaCode, cur_time):
     response = False
-
+    time = cur_time.split(":")
+    hour = int(time[0])
+    if hour <= 6 or hour >= 22:
+        return response
+    if caller_code == "T":
+        return response
+    if sameAreaCode:
+        return True
+    if caller_code == "F" or caller_code == "R":
+        return True
     return response
 
 if __name__ == '__main__':
